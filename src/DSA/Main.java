@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-            //Меню для вибора алгоритму
+            //Меню для вибора алгоритму3
         while(true) {
             System.out.println("\n Choise algorithm: ");
             System.out.println("1- Додавання двох чисел: ");
@@ -29,6 +29,7 @@ public class Main {
                         FindMaxNumber findMax = new FindMaxNumber();
                         findMax.findMaxNumber();
                         break;
+
                         case 0:
                             System.out.println("Exit");
                             sc.close();
@@ -37,8 +38,14 @@ public class Main {
                                 System.out.println("Wrong choice");
 
 
+
+
+
             }
         }
+
+
+
 
     }
 }
