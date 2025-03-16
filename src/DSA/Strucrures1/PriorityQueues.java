@@ -8,12 +8,13 @@ public class PriorityQueues {
         int size = hT.size();
         //Найдите самый больой корневой среди левых и правих дочерних элементов
         int largest = i;
-        int left = 2 * i + 1;
-        int right = 2 * i + 2;
+        int left = 2 * i + 1; // Левый потомок
+        int right = 2 * i + 2;// Правый потомок
 
-
+// Если левый потомок больше корня
         if(left < size && hT.get(left) > hT.get(largest))
             largest = left;
+        // Если правый потомок больше текущего наибольшего
         if(right < size && hT.get(right) > hT.get(largest))
             largest = right;
 
@@ -94,3 +95,5 @@ public class PriorityQueues {
 
 
 }
+
+
